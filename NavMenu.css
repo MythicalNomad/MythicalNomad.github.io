@@ -1,0 +1,79 @@
+/* Navigation bar at the top settings */ 
+
+.navbar {
+  display: flex;
+  position: fixed;
+  padding:0;
+  height: 80px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  right: 0;
+  background-color: #333;
+}
+
+.NavMenu {
+  display: flex;
+  flex-flow: row wrap;
+  padding:0;  
+  margin:auto;
+  overflow:hidden;  
+  
+}
+
+
+/* NavMenu Items settings */
+
+.NavMenuItem {
+    width:auto;
+    display:block;
+    list-style-type: none;
+    padding: 24px 2vw;   
+    text-decoration: none; 
+    color: red;
+
+}
+
+.NavMenuItem:hover {
+  color: rgb(124, 5, 5);
+}
+
+
+/* Dropdown class settings */
+
+.NavMenu .dropbtn {
+  display:none;
+  color:red;
+  background-color: #333;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  float:right;
+  .show {
+
+    display: block;
+  } 
+}
+
+.arrow {
+  border: solid red;
+  border-width: 0 2px 2px 0;
+
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin: auto auto 3px auto;
+}
+
+.NavMenu button:hover{
+  color: rgb(124, 5, 5);
+  .arrow {
+    border: solid rgb(124,5,5);
+    border-width: 0 2px 2px 0;
+  } 
+
+}
+
+
+

@@ -1,0 +1,63 @@
+/* Mobile screensize settings */
+@media screen and (max-width: 600px) {
+    .NavMenu.responsive {position: relative;}
+    .NavMenuItem {display: none;}
+    .NavMenu button.mobileDropbtn{display: block;}  
+    .NavMenu button{padding: 15px 4.9vw; max-height: 50px;}
+    .navbar {height: 50px;}
+    .dropdown-content {
+      position:fixed;
+      top:20px; left:0;
+      width:100%;
+      padding-left: 20px;
+    }
+    .ServicesMenuContainer {
+        margin: 71px auto auto auto;
+    }
+    .ServicesMenuContents {
+        width: 90%;
+    }
+    .ServicesMenuItem {
+        min-width: 0px;
+        min-height: 0px;
+    }
+}
+
+/* To hide menu items that aren't necessary */
+@media screen and (max-width: 864px) {
+    .extraInfo {display: none;}
+    .KeyItem {padding: 24px 4.5vw;}
+    .NavMenu button.regularDropbtn{
+        display: block;        
+        padding: 3vw;        
+    }
+    .dropdown-content {
+      margin-left: -4.5%;
+      
+    }
+  }
+
+
+  @media screen and (min-width: 1465px) {
+
+    .ServicesMenuItem {
+        min-width: 480px;
+        min-height: 380px;
+    }
+}
+@media screen and (max-width: 1464px) {
+
+    .ServicesMenuItem {
+        width:100%;
+        height: auto;
+    }
+}
+/*
+@media screen and (max-width: 1119px) {
+
+
+    .ServicesMenuItem {
+        width: 90%;
+    }
+
+}*/
