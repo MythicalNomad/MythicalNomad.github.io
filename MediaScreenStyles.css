@@ -4,7 +4,7 @@
     .NavMenuItem {display: none;}
     .NavMenu button.mobileDropbtn{display: block;}  
     .NavMenu button{padding: 15px 4.9vw; max-height: 50px;}
-    .NavMenu button:hover{color:red; .arrow{border:solid red; border-width: 0 2px 2px 0;}}
+    .NavMenu button:hover{color:red; .arrow{border-color: red; border-width: 0 2px 2px 0;}}
     .navbar {height: 50px;}
     .dropdown-content {
       position:fixed;
