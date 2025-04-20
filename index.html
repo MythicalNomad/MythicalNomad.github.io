@@ -146,6 +146,7 @@
             var myServicesDropdown = document.getElementById("mobileServicesDropdown");
             if (myServicesDropdown.classList.contains('show')){
                     myServicesDropdown.classList.remove('show');
+                    myServicesDropdown.classList.add('Color:red;');
                 }
         }
         function openServicesDropdown() {
@@ -153,7 +154,7 @@
             var myAboutDropdown = document.getElementById("mobileAboutDropdown");
             if (myAboutDropdown.classList.contains('show')) {
                 myAboutDropdown.classList.remove('show');
-                myServicesDropdown.classList.add('Color:red;');
+                myAboutDropdown.classList.add('Color:red;');
             }
         }
 
