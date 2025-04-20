@@ -3,7 +3,8 @@
     .NavMenu.responsive {position: relative;}
     .NavMenuItem {display: none;}
     .NavMenu button.mobileDropbtn{display: block;}  
-    .NavMenu button{padding: 15px 4.9vw; max-height: 50px;color:red;}
+    .NavMenu button{padding: 15px 4.9vw; max-height: 50px;}
+    .NavMenu button:hover{color:red; .arrow {color:red;} }
     .navbar {height: 50px;}
     .dropdown-content {
       position:fixed;
