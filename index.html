@@ -4,7 +4,10 @@
         <title>Home - New Tax Website</title>
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style> body {background-color:black; font-family: Verdana, sans-serif;line-height: 1.5;}</style>
+        <style> body {background-color:#F2F3F4 ; font-family: Verdana, sans-serif;line-height: 1.5;}
+            /* Dark mode should be #181818 */
+            
+        </style>
 
         <!--Metadata for SEO and crawlers-->
         <meta name="keywords" content="taxes, financial planning, bookeeping, cpa, tax prep, tax planning, tax">
@@ -15,7 +18,7 @@
         <link rel="stylesheet" href="NavMenu.css">
         <link rel="stylesheet" href="ServicesMenu.css">
         <link rel="stylesheet" href="MediaScreenStyles.css">
-        <link rel="stylesheet" href="ContactUsStyle.css">
+        <link rel="stylesheet" href="InformationContainerStyles.css">
 
     </head>
 
@@ -49,13 +52,12 @@
             
         </div>
         <div style="margin-top: 80px; width: 100%;">
-            <h1 style="text-align: center; color:white;">add a "get started here" button or something to go straight to the contact section <br>WELCOME TO THE WEBSITE</h1>
+            <h1 style="text-align: center; color:black;">add a "get started here" button or something to go straight to the contact section <br>WELCOME TO THE WEBSITE</h1>
 
         </div>
-        <div style="width:100%;" id="Services"></div>
-        <div class="ServicesMenuContainer" >
-            <h1 style="text-align: center; padding-top: 20px; margin-bottom: 0px;">Services</h1>
-            
+        <div style="width:100%; height:30px;" id="Services"></div>
+        <div class="InformationContainer" >
+            <h1>Services</h1>
             <div class="ServicesMenuContents">
                 <div class="ServicesMenuItem">
                     <h1 class="ServicesMenuItemHeading">Tax Prep:</h1>
@@ -117,27 +119,48 @@
                 </div> 
             </div>
         </div>
-
-        <div class="ContactUsContainer">
-            <h1 style="text-align: center; padding-top: 20px; margin-bottom: 0px;">Contact Us</h1>
+        <div style="width:100%; height:30px;" id="Contact"></div>
+        <div class="InformationContainer">
+            <h1>Contact Us</h1>
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend>Contact Us:</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" maxlength="25" style="width:auto;" required><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" maxlength="25" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" requried><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" placeholder="Please tell us about your situtation and how we can best assist you." rows="10" cols="44" requried></textarea><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+                
+            </form> 
         </div>
-        <div class="ContactUsContainer">
-            <h1 style="text-align: center; padding-top: 20px; margin-bottom: 0px;">About</h1>
-            <p>TALK ABOUT Simple, straightforward virtual bookkeeping for your small business or personal finances. Based in San Diego, I work out of my home office with my cat supervising your books to ensure that they are both beautifully organized and accurate.
-
-                For many people, keeping the books up to date or even getting started with the process can be difficult. With all the different options and information out there, it can be easy to get overwhelmed. I decided to create a simple, professional, approachable environment where small business owners could feel comfortable tackling their bookkeeping projects.</p>
-            <p>How it Works:
-                I use a remote communication model. This means that I primarily use email to speak with clients, with phone calls being fairly rare. This increases my efficiency, as well as gives us a record of conversation to refer back to when referencing information.
-                Tax work is performed in Drake Software.  I utilize a secure online portal to transfer documents. If this is not preferred, we can exchange password protected documents through email.
+        <div style="width:100%; height:30px;" id="About"></div>
+        <div class="InformationContainer">
+            <h1>About</h1>
+            <p>Simple, straightforward virtual tax preparation for your individual, married, family, or small business taxes. Based in Denver, we work out of our home offices with the cats supervising our tax filing process to ensure we maximize your return.<br>
+                <br>For many people, taxes can be stressful and complicated. With all the different options and information out there, it can be easy to get overwhelmed. We decided to create a simple, professional, approachable environment where individuals and small business owners could feel comfortable handling their tax filings.</p>
+            <p><b>How it Works:</b>
+                We use a remote communication model. This means that we primarily use email to speak with clients, with phone calls being fairly rare. This increases our efficiency, as well as gives us a record of conversation to refer back to when referencing information.
+                Tax work is performed in Drake Software, which utilizes a secure online portal to transfer documents. If this is not preferred, we can exchange password protected documents through email.
                 </p>
         </div>
-        <div class="ContactUsContainer">
-            <h1 style="text-align: center; padding-top: 20px; margin-bottom: 0px;">Staff</h1>
+        <div style="width:100%; height:30px;" id="Staff"></div>
+        <div class="InformationContainer">
+            <h1>Staff</h1>
             <p>Trevor Guerin, CPA<br>Karen Guerin, EA<br>Sammy Trout, Ethics Consultant<br>Simon and Kujo, Feline Office Assistants</p>
-            <p>CREDENTIALS<br>CPA - blah blah blah<br>Enrolled Agent (EA) - blah blah blah</p>
+            <h3 style="text-align: center;">CREDENTIALS:</h3>
+                <ul>
+                    <li>CPA - A Certified Public Accountant (CPA) is a licensed professional who is qualified to prepare and file tax returns for individuals, businesses, and organizations. We have in-depth knowledge of tax laws, regulations, and current updates, allowing them to ensure compliance while helping clients minimize their tax liability legally. CPAs can also represent you before the IRS in case of audits or disputes and provide strategic tax planning throughout the year to optimize financial outcomes. Our expertise makes us a trusted advisor for both routine tax filings and complex financial situations.</li>
+                    <br><li>Enrolled Agent (EA) - An Enrolled Agent (EA) is a federally licensed tax professional authorized by the IRS to prepare tax returns, provide tax advice, and represent taxpayers in all matters before the IRS. EAs specialize exclusively in taxation. They are qualified to handle a wide range of tax issues, including individual, business, and estate tax matters. With unlimited practice rights, EAs can represent any taxpayer, for any tax matter, in any state.</li>
+                </ul>    
         </div>
-        <div class="ContactUsContainer">
-            <h1 style="text-align: center; padding-top: 20px; margin-bottom: 0px;">Blog/Cat Pics</h1>
+        <div style="width:100%; height:30px;" id="Blog"></div>
+        <div class="InformationContainer">
+            <h1>Blog/Cat Pics</h1>
         </div>
 
     <script>
@@ -146,6 +169,7 @@
             var myServicesDropdown = document.getElementById("mobileServicesDropdown");
             if (myServicesDropdown.classList.contains('show')){
                     myServicesDropdown.classList.remove('show');
+                    
                 }
         }
         function openServicesDropdown() {
@@ -153,6 +177,7 @@
             var myAboutDropdown = document.getElementById("mobileAboutDropdown");
             if (myAboutDropdown.classList.contains('show')) {
                 myAboutDropdown.classList.remove('show');
+                
             }
         }
 
