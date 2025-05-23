@@ -1,9 +1,11 @@
+
 .InformationContainer {
     margin: 40px auto auto auto;
     width:92%; height: auto; 
     background-color: #619DD1; 
     border: solid #00599c;
-    border-radius: 10px;}
+    border-radius: 10px;
+}
 
 
 .InformationContainer h1 {
@@ -24,4 +26,25 @@ margin-right: auto;
     width:95%;
 margin-left: 1%;
 margin-right: auto;
+}
+
+.ContactUsLinks a {
+    display: block;
+    text-decoration: none;
+    color:white;
+    padding: 10px 10px;
+
+    margin: 10px 3%;
+    border: solid #00599c;
+    background-color: #00599c;
+    border-radius: 30px;
+    width:auto;
+
+    text-align: center;
+
+}
+
+.InformationContainer a:hover {
+    background-color: #002d62;
+
 }
