@@ -6,8 +6,6 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-
-
     width:80%;
     margin: auto;
 }
@@ -18,8 +16,6 @@
     border: solid #00599c;
     background-color: #043673;
     width: auto;
-
-
 }
 
 .ServicesMenuItemHeading {
