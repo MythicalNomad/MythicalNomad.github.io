@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>Home - New Tax Website</title>
+        <title>NextGen Taxes</title>
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style> body {background-color:#F2F3F4 ; font-family: Verdana, sans-serif;line-height: 1.5;}
-            /* Dark mode should be #181818   #F2F3F4*/
+        <style> body {font-family: Verdana, sans-serif;line-height: 1.5;font-size:18px;}
+            /*Background based on OS Style Preference */
+            @media (prefers-color-scheme: light) {
+                body {background-color: #97a7b8;}
+            }
+            @media (prefers-color-scheme: dark) { 
+                body {background-color: #181818;}
+                .dark {color:white;}
+            }
             
         </style>
 
         <!--Metadata for SEO and crawlers-->
         <meta name="keywords" content="taxes, financial planning, bookeeping, cpa, tax prep, tax planning, tax">
-        <meta name="title" content="Fat Cat Accounting">
-        <meta name="description" content="Fat Cat Accounting information and contact page">
+        <meta name="title" content="NextGen Taxes">
+        <meta name="description" content="NextGen Taxes information and contact page">
 
         <!--Stylesheet links-->
         <link rel="stylesheet" href="NavMenu.css">
@@ -34,7 +41,7 @@
                     <a class="NavMenuItem KeyItem"href="#Contact">Contact</a>
                     <a class="NavMenuItem extraInfo" href="#About" >About</a>
                     <a class="NavMenuItem extraInfo"href="#Staff">Staff</a>
-                    <a class="NavMenuItem extraInfo" href="#Blog">Blog/Cat pics</a>
+                    <a class="NavMenuItem extraInfo" href="#FAQ">FAQ</a>
                     <button class="dropbtn mobileDropbtn" onclick="openServicesDropdown()">Services <i class="arrow down"></i></a>
                     <div id="mobileServicesDropdown" class="dropdown-content">
                         <a href="#Services">Services</a>
@@ -44,20 +51,20 @@
                     <div id="mobileAboutDropdown" class="dropdown-content" >
                         <a href="#About" >About</a>
                         <a href="#Staff">Staff</a>
-                        <a href="#Blog">Blog/Cat pics</a>
+                        <a href="#FAQ">FAQ</a>
                              
                     </div>
                 </nav>
             </div>
             
         </div>
-        <div style="margin-top: 80px; width: 100%;text-align: center; color:black;">
-            <h1><span style="font-size: 20px;margin-left: -36%;">WELCOME TO</span><br><span style="font-size: 60px;">[insert biz name]</span></h1>
+        <div class="dark" style="margin-top: 80px; width: 100%;text-align: center; ">
+            <h1><span style="font-size: 20px;margin-left: -36%;">WELCOME TO</span><br><span style="font-size: 60px;">NextGen Taxes</span></h1>
             <p>We're here to help guide and maximize your financial capabilities</p>
 
         </div>
 
-        <div style="width:100%; height:30px;" id="Services"></div>
+
         <div class="InformationContainer" >
             <h1>Services</h1>
             <div class="ServicesMenuContents">
@@ -136,7 +143,7 @@
         <div style="width:100%; height:30px;" id="About"></div>
         <div class="InformationContainer">
             <h1>About</h1>
-            <p>Simple, straightforward virtual tax preparation for your individual, married, family, or small business taxes. Based in Denver, we work out of our home offices with the cats supervising our tax filing process to ensure we maximize your return.<br>
+            <p>Simple, straightforward virtual tax preparation for your individual, married, family, or small business taxes. Based in Denver, we work out of our home offices. We do not yet have a physical location.<br>
                 <br>For many people, taxes can be stressful and complicated. With all the different options and information out there, it can be easy to get overwhelmed. We decided to create a simple, professional, approachable environment where individuals and small business owners could feel comfortable handling their tax filings.</p>
             <p><b>How it Works:</b>
                 We use a remote communication model. This means that we primarily use email to speak with clients, with phone calls being fairly rare. This increases our efficiency, as well as gives us a record of conversation to refer back to when referencing information.
@@ -149,13 +156,13 @@
             <p>Trevor Guerin, CPA, Tax Preparer<br>Karen Guerin, EA, Tax Preparer<br>Sammy Trout, Administrative Support & Accessibility Consultant<br>Simon and Kujo, Feline Office Assistants</p>
             <h3 style="text-align: center;">CREDENTIALS:</h3>
                 <ul>
-                    <li>CPA - A Certified Public Accountant (CPA) is a licensed professional who is qualified to prepare and file tax returns for individuals, businesses, and organizations. We have in-depth knowledge of tax laws, regulations, and current updates, allowing them to ensure compliance while helping clients minimize their tax liability legally. CPAs can also represent you before the IRS in case of audits or disputes and provide strategic tax planning throughout the year to optimize financial outcomes. Our expertise makes us a trusted advisor for both routine tax filings and complex financial situations.</li>
-                    <br><li>Enrolled Agent (EA) - An Enrolled Agent (EA) is a federally licensed tax professional authorized by the IRS to prepare tax returns, provide tax advice, and represent taxpayers in all matters before the IRS. EAs specialize exclusively in taxation. They are qualified to handle a wide range of tax issues, including individual, business, and estate tax matters. With unlimited practice rights, EAs can represent any taxpayer, for any tax matter, in any state.</li>
+                    <li><b>CPA</b> - A Certified Public Accountant (CPA) is a licensed professional who is qualified to prepare and file tax returns for individuals, businesses, and organizations. We have in-depth knowledge of tax laws, regulations, and current updates, allowing them to ensure compliance while helping clients minimize their tax liability legally. CPAs can also represent you before the IRS in case of audits or disputes and provide strategic tax planning throughout the year to optimize financial outcomes. Our expertise makes us a trusted advisor for both routine tax filings and complex financial situations.</li>
+                    <br><li><b>EA</b> - An Enrolled Agent (EA) is a federally licensed tax professional authorized by the IRS to prepare tax returns, provide tax advice, and represent taxpayers in all matters before the IRS. EAs specialize exclusively in taxation. They are qualified to handle a wide range of tax issues, including individual, business, and estate tax matters. With unlimited practice rights, EAs can represent any taxpayer, for any tax matter, in any state.</li>
                 </ul>    
         </div>
-        <div style="width:100%; height:30px;" id="Blog"></div>
+        <div style="width:100%; height:30px;" id="FAQ"></div>
         <div class="InformationContainer">
-            <h1>Blog/Cat Pics</h1>
+            <h1>FAQ</h1>
         </div>
 
     <script>
