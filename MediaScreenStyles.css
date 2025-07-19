@@ -4,7 +4,7 @@
     .NavMenuItem {display: none;}
     .NavMenu button.mobileDropbtn{display: block;}  
     .NavMenu button{padding: 15px 4.9vw; max-height: 50px;}
-    .NavMenu button:hover {color:rgb(194, 168, 168);; .arrow{border:solid rgb(194, 168, 168); border-width: 0 2px 2px 0;}}
+    .NavMenu button:hover {color:rgb(194, 168, 168); .arrow{border:solid rgb(194, 168, 168); border-width: 0 2px 2px 0;}}
 
     .navbar {height: 50px;}
     .dropdown-content {
@@ -16,6 +16,7 @@
     }
     .InformationContainer {
         margin: 71px auto auto auto;
+        
     }
     .ServicesMenuContents {
         width: 90%;
@@ -24,6 +25,7 @@
         min-width: 0px;
         min-height: 0px;
     }
+
 }
 
 /* To hide menu items that aren't necessary */
@@ -47,13 +49,24 @@
         min-width: 480px;
         min-height: 380px;
     }
+    .ContactUsLinks a {
+        max-width: 17ch;
+        margin: auto;
+
+    }
+    .ContactUsLinks {
+        display:flex;
+        
+
+    }
 }
-@media screen and (max-width: 1464px) {
+@media screen and (max-width: 1465px) {
 
     .ServicesMenuItem {
         width:100%;
         height: auto;
     }
+    
 }
 /*
 @media screen and (max-width: 1119px) {
