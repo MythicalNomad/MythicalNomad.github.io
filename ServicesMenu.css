@@ -1,0 +1,47 @@
+
+/* Make floating background */
+
+
+.ServicesMenuContents {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width:90%;
+    margin: auto;
+}
+
+.ServicesMenuItem {
+    margin: auto auto 40px auto;
+    border-radius: 10px;
+    border: solid #00599c;
+    background-color: #043673;
+    width: auto;
+}
+
+.ServicesMenuItemHeading {
+    text-align: center;
+    color: goldenrod;
+    padding: 0 15px 0 15px;
+    margin-bottom: 2px;
+}
+
+.ServicesMenuItem h2 {
+    color:goldenrod;
+    text-align: center; 
+    font-size: 14px; 
+    margin-top: 0px;
+}
+
+
+.MenuItemList li{
+    color: antiquewhite;
+    list-style-type: '- ';
+    margin-left: -10px;
+    margin-right: 23px;
+}
+
+.ComingSoonItems li{
+    text-shadow:0 0 8px white; 
+    color: transparent;
+}
+

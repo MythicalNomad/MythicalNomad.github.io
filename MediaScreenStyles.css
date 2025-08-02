@@ -1,0 +1,96 @@
+/* Mobile screensize settings */
+@media screen and (max-width: 600px) {
+    .NavMenu.responsive {position: relative;}
+    .NavMenuItem {display: none;}
+    .NavMenu button.mobileDropbtn{display: block;}  
+    .NavMenu button{padding: 15px 4.9vw; max-height: 50px;}
+    .NavMenu button:hover {color:rgb(194, 168, 168); .arrow{border:solid rgb(194, 168, 168); border-width: 0 2px 2px 0;}}
+
+    .navbar {height: 50px;}
+    .dropdown-content {
+      position:fixed;
+      top:31px; left:0;
+      width:105%;
+      padding-left: 20px;
+      margin-left: 0px;
+    }
+    .InformationContainer {
+        margin: 71px auto auto auto;
+        min-width:92%;
+    }
+    .ServicesMenuContents {
+        width: 90%;
+    }
+    .ServicesMenuItem {
+        min-width: 0px;
+        min-height: 0px;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        body {background-image: url('Capture1.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+                .dark {color:white;text-shadow: 2px 2px 2px #000000;}
+            }
+@media (prefers-color-scheme: light) {
+        body {background-image: url('Capture2.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+                .dark {color:white;text-shadow: 2px 2px 2px #000000;}
+            }
+
+}
+
+/* To hide menu items that aren't necessary */
+@media screen and (max-width: 864px) {
+    .extraInfo {display: none;}
+    .KeyItem {padding: 16px 4.5vw;}
+    .NavMenu button.regularDropbtn{
+        display: block;        
+        padding: 2vw;        
+    }
+    .dropdown-content {
+      margin-left: -4.9%;
+      
+    }
+  }
+
+
+  @media screen and (min-width: 1465px) {
+
+    .ServicesMenuItem {
+        min-width: 480px;
+        min-height: 380px;
+    }
+    .ContactUsLinks a {
+        max-width: 17ch;
+        margin: auto;
+
+    }
+    .ContactUsLinks {
+        display:flex;
+        
+
+    }
+}
+@media screen and (max-width: 1465px) {
+
+    .ServicesMenuItem {
+        width:100%;
+        height: auto;
+    }
+    
+}
+/*
+@media screen and (max-width: 1119px) {
+
+
+    .ServicesMenuItem {
+        width: 90%;
+    }
+
+}*/
